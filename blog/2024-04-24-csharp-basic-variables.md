@@ -21,6 +21,7 @@ string name;
 ```
 
 <b>Gán giá trị cho biến</b>: Bạn có thể gán giá trị cho biến khi khai báo hoặc sau đó trong chương trình:
+
 ```cs
 int age = 30;
 string name = "John";
@@ -28,6 +29,7 @@ string name = "John";
 
 
 <b>Thay đổi giá trị của biến</b>: Bạn có thể thay đổi giá trị của một biến bằng cách gán một giá trị mới cho nó:
+
 ```cs
 age = 35;
 ```
