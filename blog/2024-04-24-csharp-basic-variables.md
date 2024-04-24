@@ -2,7 +2,7 @@
 slug: csharp-basic-variables
 title: Biến và kiểu dữ liệu trong C#
 authors: ndhieu
-tags: [.NET Framework][C#]
+tags: [.NET Framework, C#]
 ---
 
 ## Biến trong C#
