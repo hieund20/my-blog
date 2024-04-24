@@ -9,6 +9,55 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[Biến và kiểu dữ liệu trong C#]]></title>
+            <link>https://hieund20.github.io/my-blog/blog/csharp-basic-variables</link>
+            <guid>https://hieund20.github.io/my-blog/blog/csharp-basic-variables</guid>
+            <pubDate>Wed, 24 Apr 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Biến trong C#]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="biến-trong-c">Biến trong C#<a href="https://hieund20.github.io/my-blog/blog/csharp-basic-variables#bi%E1%BA%BFn-trong-c" class="hash-link" aria-label="Direct link to Biến trong C#" title="Direct link to Biến trong C#">​</a></h2>
+<p>Trong C#, biến là một khối dữ liệu có thể thay đổi giá trị trong quá trình thực thi của chương trình. Mỗi biến trong C# đều có một kiểu dữ liệu và một tên duy nhất để xác định nó. Dưới đây là một số điểm cơ bản về biến trong C#</p>
+<p><b>Khai báo biến</b>: Để khai báo một biến trong C#, bạn sử dụng cú pháp sau:</p>
+<div class="language-cs codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-cs codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">&lt;kiểu_dữ_liệu&gt; &lt;tên_biến&gt;;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Ví dụ:</p>
+<div class="language-cs codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-cs codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">int age;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">string name;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><b>Gán giá trị cho biến</b>: Bạn có thể gán giá trị cho biến khi khai báo hoặc sau đó trong chương trình:</p>
+<div class="language-cs codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-cs codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">int age = 30;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">string name = "John";</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><b>Thay đổi giá trị của biến</b>: Bạn có thể thay đổi giá trị của một biến bằng cách gán một giá trị mới cho nó:</p>
+<div class="language-cs codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-cs codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">age = 35;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><b>Biến cục bộ và biến toàn cục</b>: Biến cục bộ được khai báo trong phạm vi của một phương thức hoặc một khối mã cụ thể. Biến toàn cục được khai báo bên ngoài mọi phương thức và có thể truy cập từ bất kỳ đâu trong chương trình.</p>
+<p><b>Hằng số (constant)</b>: Hằng số là một loại biến có giá trị không thể thay đổi sau khi đã được gán giá trị ban đầu. Để định nghĩa một hằng số trong C#, bạn sử dụng từ khóa const.</p>
+<div class="language-cs codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-cs codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">const double Pi = 3.14;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kiểu-dữ-liệu-trong-c">Kiểu dữ liệu trong C#<a href="https://hieund20.github.io/my-blog/blog/csharp-basic-variables#ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-trong-c" class="hash-link" aria-label="Direct link to Kiểu dữ liệu trong C#" title="Direct link to Kiểu dữ liệu trong C#">​</a></h2>
+<p>Trong C#, có nhiều loại kiểu dữ liệu khác nhau được sử dụng để định nghĩa các biến hoặc hằng số, mỗi kiểu dữ liệu có đặc điểm và phạm vi sử dụng riêng. Dưới đây là một số kiểu dữ liệu phổ biến trong C#.</p>
+<b>Kiểu số nguyên (Integer Types):</b>
+<ul>
+<li><code>int</code>: Kiểu số nguyên có kích thước 32 bit, có thể lưu trữ giá trị từ -2,147,483,648 đến 2,147,483,647</li>
+<li><code>long</code>: Kiểu số nguyên có kích thước 64 bit, có thể lưu trữ giá trị từ -9,223,372,036,854,775,808 đến 9,223,372,036,854,775,807.</li>
+<li><code>short</code>: Kiểu số nguyên có kích thước 16 bit, có thể lưu trữ giá trị từ -32,768 đến 32,767.</li>
+<li><code>byte</code>: Kiểu số nguyên không dấu có kích thước 8 bit, có thể lưu trữ giá trị từ 0 đến 255.</li>
+</ul>
+<b>Kiểu số thực (Floating-Point Types):</b>
+<ul>
+<li><code>float</code>: Kiểu số thực dấu chấm động có kích thước 32 bit, có độ chính xác khoảng 6-9 chữ số thập phân.</li>
+<li><code>double</code>: Kiểu số thực dấu chấm động có kích thước 64 bit, có độ chính xác cao hơn float.</li>
+</ul>
+<b>Kiểu ký tự (Character Type):</b>
+<ul>
+<li><code>char</code>: Kiểu ký tự Unicode có kích thước 16 bit, được sử dụng để lưu trữ một ký tự Unicode.</li>
+</ul>
+<b>Kiểu chuỗi (String Type):</b>
+<ul>
+<li><code>string</code>: Kiểu dữ liệu chuỗi, sử dụng để lưu trữ một chuỗi các ký tự Unicode.</li>
+</ul>
+<p><b>Kiểu Boolean (Boolean Type):</b>
+<code>bool</code>: Kiểu dữ liệu boolean, chỉ có thể lưu trữ hai giá trị là true hoặc false.</p>
+<p><b>Kiểu hằng số (Constant Type):</b>
+<code>const</code>: Kiểu hằng số được sử dụng để định nghĩa các biến có giá trị không thay đổi trong suốt vòng đời của chương trình.</p>
+<p>Ngoài ra, C# cũng hỗ trợ kiểu dữ liệu <code>decimal</code> để lưu trữ các số thập phân có độ chính xác cố định, kiểu dữ liệu <code>object</code> cho các đối tượng không xác định trước, và kiểu dữ liệu <code>dynamic</code> cho biến có thể thay đổi kiểu dữ liệu trong quá trình thực thi.</p>]]></content:encoded>
+            <category>.NET Framework</category>
+            <category>C#</category>
+        </item>
+        <item>
             <title><![CDATA[Giới thiệu về .NET Framework]]></title>
             <link>https://hieund20.github.io/my-blog/blog/dot-net-introduce</link>
             <guid>https://hieund20.github.io/my-blog/blog/dot-net-introduce</guid>
